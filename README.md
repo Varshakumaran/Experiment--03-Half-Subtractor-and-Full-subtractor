@@ -1,5 +1,7 @@
-# Experiment--03-Half-Subtractor-and-Full-subtractor
-## Implementation-of-Half-subtractor-and-Full-subtractor-circuit
+Name: varsha.k
+
+ref number: 23005952
+# Experiment 03 Half Subtractor and Full subtractor
 ## AIM:
 To design a half subtractor and full subtractor circuit and verify its truth table in Quartus using Verilog programming.
 
@@ -33,22 +35,43 @@ Write the detailed procedure here
 
 
 ## Program:
-/*
-Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+# Half Subtractor:
+```
+module halfsub(diff,carry,a,b);
+input a,b;
+output diff,carry;
+xor(diff,a,b);
+assign carry=(~a)&b;
+endmodule
+```
+# Full Subtractor:
+```
+module fullsub(diff,carry,a,b,c);
+input a,b,c;
+output diff,carry;
+xor(diff,a,b,c);
+assign carry= (~a)&c | (~a)&b | (b&c);
+endmodule
+```
 
-## Output:
+##  RTL realization:
+# Half Subtractor:
+![image](https://github.com/Varshakumaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979367/8c437a9c-3b75-4e8e-a870-c3075f79fe25)
+# Full Subtractor:
+![image](https://github.com/Varshakumaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979367/32e63d12-c9a3-47f4-99dc-0f3c8582c994)
 
-## Truthtable
+## Timing diagram :
+# Half Subtractor:
+![image](https://github.com/Varshakumaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979367/359b2164-c964-4993-b942-9b5fbddb732a)
+# Full Subtractor:
+![image](https://github.com/Varshakumaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979367/1ecd9e1e-4947-4e40-bd9c-a1105eaca3a6)
 
+# Truth Table:
+# Half Subtractor:
+![image](https://github.com/Varshakumaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979367/10c200f4-c409-475e-808a-a6dad079ae12)
+# Full Subtractor:
+![image](https://github.com/Varshakumaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979367/749ea70f-9d3e-4d03-b684-a0a49c23af0b)
 
-
-##  RTL realization
-
-
-## Timing diagram 
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
