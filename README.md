@@ -29,9 +29,15 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 ## Procedure
 
+Use module projname(input,output) to start the Verilog programmming.
 
+Assign inputs and outputs using the word input and output respectively.
 
-Write the detailed procedure here 
+Use defined keywords like wire,assign and required logic gates to represent the boolean expression.
+
+Use each output to represnt onre for differnce and the other for borrow.
+
+End the verilog program using keyword endmodule
 
 
 ## Program:
