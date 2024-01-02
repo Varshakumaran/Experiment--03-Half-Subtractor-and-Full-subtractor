@@ -1,6 +1,6 @@
-Name: varsha.k
+## Name: varsha.k
 
-ref number: 23005952
+## ref number: 23005952
 # Experiment 03 Half Subtractor and Full subtractor
 ## AIM:
 To design a half subtractor and full subtractor circuit and verify its truth table in Quartus using Verilog programming.
